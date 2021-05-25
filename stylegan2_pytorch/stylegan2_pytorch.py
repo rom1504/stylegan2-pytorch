@@ -1379,7 +1379,7 @@ class Trainer():
 
         self.steps = name * self.save_every
 
-        load_data = torch.load(self.model_name(name))
+        load_data = torch.load(self.model_name(name), map_location=torch.device('cpu'))
 
         if 'version' in load_data:
             print(f"loading from version {load_data['version']}")
