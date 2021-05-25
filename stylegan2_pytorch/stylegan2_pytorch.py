@@ -721,8 +721,6 @@ class StyleGAN2(nn.Module):
         self._init_weights()
         self.reset_parameter_averaging()
 
-        self.cuda(rank)
-
         # startup apex mixed precision
         self.fp16 = fp16
         if fp16:
