@@ -44,9 +44,6 @@ except:
 
 import aim
 
-assert torch.cuda.is_available(), 'You need to have an Nvidia GPU with CUDA installed.'
-
-
 # constants
 
 NUM_CORES = multiprocessing.cpu_count()
