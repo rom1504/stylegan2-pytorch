@@ -720,6 +720,7 @@ class StyleGAN2(nn.Module):
         # init weights
         self._init_weights()
         self.reset_parameter_averaging()
+        print("hi")
 
         # startup apex mixed precision
         self.fp16 = fp16
